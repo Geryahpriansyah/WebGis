@@ -1,0 +1,583 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background-color: #FBF6EE;
+    font-family: 'Poppins', sans-serif;
+}
+.navbar{
+    position: relative;
+    z-index: 1;
+    background-color:#0F0F0F ;
+    background: linear-gradient(to right rgba(0,0,0,5), rgba(0,0,0,0) );
+}
+.nav-link{
+    color: white!important;
+    text-transform: lowercase;
+}
+
+.jumbotron{
+    background: url('http://127.0.0.1:8000/img/bg.jpg') center;
+    background-size: cover;
+    height: 640px;
+    margin-top: -100px;
+    padding-top: 130px;
+    text-align: center;
+}
+.jumbotron .display-4, .lead{
+    text-align: center;
+    color: white;
+}
+.jumbotron .display-4{
+   
+    color:white;
+    font-size: 50px;
+    font-weight: 800;
+    margin-top: 166px;
+ 
+    text-shadow: 1px 0px 1px rgba(0, 0, 0, 0.7);
+}
+.jumbotron .lead{
+   display: inline-block;
+   margin-left: 20px;
+   margin-top: 20px;
+}
+
+.jumbotron .btn-jumbotron{
+    border: 2px solid white;
+    color: white;
+    margin-top: 80px;
+    font-size: 15px;
+    font-weight: 600;
+    width: 161px;
+}
+.jumbotron .btn-jumbotron:hover{
+    background-color:red;
+}
+
+.jumbotron p{
+    color:aliceblue;
+}
+
+
+
+.services{
+    margin-top: 50px;
+
+}
+.services h1{
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: 600;
+    font-size: 23px;
+   
+}
+.services .card{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    border: none;
+}
+.services img{
+    width: 100%;
+}
+/* .services h5{
+    font-size: 30px;
+    font-weight: 800;
+    color: #0F0F0F;
+    text-align: center;
+   
+} */
+.services p{
+    display: none;
+}
+
+
+/* .about .container{
+    margin-top: 70px;
+    padding-bottom: 150px;
+   border: none;
+   box-sizing: border-box;
+  
+    padding-top: 100px;
+ 
+}
+
+.about p{
+    color: white;
+    margin-top: 20px;
+    font-size: 12px;
+    
+}
+.about h2{
+    color: white;
+    margin-top: 70px;
+    font-weight: 700;
+    text-align: center;
+} */
+
+.menu .container{
+    z-index: 1;
+    position: relative;
+}
+.menu{
+    margin-top: 90px;
+    justify-content: center;
+    /* background-image: url(img/4452317.jpg); */
+    background-size:cover;
+    background-repeat: repeat;
+    background-position: center;
+    height: 640px;
+    padding-top: 20px;
+    padding-left: 20px;
+   
+    position: relative;
+    margin-top: 30px;
+    margin-bottom: -50px;
+}
+/* .menu::after{
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    /* background-image: linear-gradient(to bottom, rgba(0,0,0,7), rgba(0,0,0,0)); */
+    /* position: absolute;
+    margin-left: -20px;
+    bottom: 0; */
+
+.menu .card{
+    background-color: transparent;
+    z-index: 1;
+    position: relative;
+    border: none;
+}
+.menu .card:hover{
+   
+    border: none;
+    
+    
+}
+.menu .card img:hover{
+    scale: 1.2;
+}
+.menu h2{
+    margin-top: 20px;
+    margin-bottom: 40px;
+    color: black;
+    z-index: 1;
+    position: relative;
+}
+.menu p{
+    font-size: 12px;
+    color: black;
+    margin-top: 20px;
+    z-index: 1;
+    position: relative;
+   
+}
+
+.menu .btn-order{
+    background-color: #E7B10A;
+    color: white;
+    border-radius: 16px;
+    font-size: 10px;
+    font-weight: 600;
+    width: 80px;
+    z-index: 1;
+    position: relative;
+}
+.menu .btn-order:hover{
+    scale: 1.2;
+}
+.menu .col-4{
+    margin-bottom: 60px;
+    z-index: 1;
+    position: relative;
+}
+
+.menu-pizza .container{
+    z-index: 1;
+    position: relative;
+}
+.menu-pizza{
+    margin-top: 90px;
+    justify-content: center;
+    /* background-image: url(img/4452317.jpg); */
+    background-size:cover;
+    background-repeat: repeat;
+    background-position: center;
+    height: 640px;
+    padding-top: 20px;
+    padding-left: 20px;
+   
+    position: relative;
+    margin-top: 30px;
+    padding-bottom: 150px;
+}
+/* .menu::after{
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    /* background-image: linear-gradient(to bottom, rgba(0,0,0,7), rgba(0,0,0,0)); */
+    /* position: absolute;
+    margin-left: -20px;
+    bottom: 0; */
+
+    .menu-pizza .card{
+    background-color: transparent;
+    z-index: 1;
+    position: relative;
+    border: none;
+}
+.menu-pizza .card:hover{
+   
+    border: none;
+    
+    
+}
+.menu-pizza .card img:hover{
+    scale: 1.2;
+}
+.menu-pizza h2{
+    margin-top: 20px;
+    margin-bottom: 40px;
+    color: black;
+    z-index: 1;
+    position: relative;
+}
+.menu-pizza p{
+    font-size: 12px;
+    color: black;
+    margin-top: 20px;
+    z-index: 1;
+    position: relative;
+   
+}
+
+.menu-pizza .btn-order{
+    background-color: #E7B10A;
+    color: white;
+    border-radius: 16px;
+    font-size: 10px;
+    font-weight: 600;
+    width: 80px;
+    z-index: 1;
+    position: relative;
+}
+.menu-pizza .btn-order:hover{
+    scale: 1.2;
+}
+.menu-pizza .col-4{
+    margin-bottom: 60px;
+    z-index: 1;
+    position: relative;
+}
+
+.menu-minuman .container{
+    z-index: 1;
+    position: relative;
+}
+.menu-minuman{
+    margin-top: 90px;
+    justify-content: center;
+    /* background-image: url(img/4452317.jpg); */
+    background-size:cover;
+    background-repeat: repeat;
+    background-position: center;
+    height: 640px;
+    padding-top: 20px;
+    padding-left: 20px;
+   
+    position: relative;
+    margin-top: 30px;
+    margin-bottom: 150px;
+}
+.menu-minuman .card{
+    background-color: transparent;
+    z-index: 1;
+    position: relative;
+    border: none;
+    
+}
+.menu-minuman .card:hover{
+   
+    border: none;
+    
+    
+}
+.menu-minuman .card img:hover{
+    scale: 1.2;
+}
+.menu-minuman h2{
+    margin-top: 20px;
+    margin-bottom: 40px;
+    color: black;
+    z-index: 1;
+    position: relative;
+}
+.menu-minuman p{
+    font-size: 12px;
+    color: black;
+    margin-top: 20px;
+    z-index: 1;
+    position: relative;
+   
+}
+
+.menu-minuman .btn-order{
+    background-color: #E7B10A;
+    color: white;
+    border-radius: 16px;
+    font-size: 10px;
+    font-weight: 600;
+    width: 80px;
+    z-index: 1;
+    position: relative;
+}
+.menu-minuman .btn-order:hover{
+    scale: 1.2;
+}
+.menu-minuman .col-4{
+    margin-bottom: 60px;
+    z-index: 1;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.best-eat{
+    margin-top: 100px;
+    padding-bottom: 200px;
+}
+
+.best-eat img{
+    width: 100%;
+    border-radius: 20px;
+    border: none;
+    box-sizing: border-box;
+    
+    padding-top: 27px;
+    padding: 20px;
+}
+.best-eat h2{
+    margin-top: 30px;
+    font-weight: 600;
+    font-size: 26px;
+}
+.best-eat p{
+    margin-top: 30px;
+    font-size: 15px;
+}
+.best-eat .btn-best{
+    background-color: #E7B10A;
+    color: white;
+    border-radius: 16px;
+    font-size: 12px;
+    font-weight: 600;
+    width: 100px;
+    z-index: 1;
+    position: relative;
+    margin-top: 20px;
+}
+.best-eat .btn-best:hover{
+    scale: 1.2;
+}
+.best-eat h2, p, .best-eat{
+    margin-left: 10px;
+}
+
+
+html,body{
+    position: relative;
+    height: 100%;
+}
+
+.promosi img{
+    width: 100%;
+}
+.promosi h2{
+    margin-bottom: -10px;
+    font-weight: 800;
+}
+
+
+.promosi{
+    margin-top: -70px;
+}
+.promosi1{
+    margin-top: 40px;
+}
+.promosi1 h1{
+    text-align: center;
+    font-weight: 800;
+    margin-bottom: 40px;
+}
+.footer{
+    margin-top: 120px;
+    text-align: center;
+}
+.footer h5{
+    font-size: 15px;
+    color: #495E57;
+    font-weight: 500;
+}
+.footer .wrapper{
+    display: inline-flex;
+    list-style: none;
+    margin-left: -39px;
+}
+.footer .wrapper .icon{
+    position: relative;
+    background: #ffffff;
+    border-radius: 50%;
+    padding: 15px;
+    margin: 10px;
+    width: 50px;
+    height: 50px;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0 10px  10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55); 
+}
+.footer .wrapper .tooltip:before{
+    position: absolute;
+    content: '';
+    height: 8px;
+    width: 8px;
+    background: #ffffff;
+    bottom: -3px;
+    left: 50%;
+    transform: translate(-50%) rotate(45deg);
+    transition: all 0.3s cubic-bezier(0.68, -055, 0.265, 155);
+}
+
+.footer .wrapper .icon:hover .tooltip {
+    top: -45px;
+    opacity: 1;
+    visibility:visible;
+    pointer-events: auto;
+}
+.footer .wrapper .icon:hover spam,
+.wrapper .icon:hover .tooltip{
+    text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.1);
+}
+.footer .wrapper .facebook:hover,
+.footer .facebook:hover.tooltip,
+.wrapper .facebook:hover.tooltip:before
+{
+    background: #1877f2;
+    color: black;
+}
+.footer .wrapper .instagram:hover,
+.wrapper .instagram:hover.tooltip,
+.wrapper .instagram:hover.tooltip::before{
+    background: #e4405f;
+    color: black;
+}
+
+.footer .wrapper .whatsapp:hover,
+.wrapper .whatsapp:hover.tooltip,
+.wrapper .whatsapp:hover.tooltip::before{
+    background: #60bf0d;
+    color: black;
+}
+.footer h6{
+    font-weight: 400;
+    font-size: 13px;
+}
+
+.kembali img{
+    width: 15%;
+}
+.kembali{
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Dekstop Version */
+@media (min-width:992px){
+
+
+  .navbar{
+    background-color: transparent;
+  }
+    .jumbotron{
+        margin-top: -80px;
+    }
+    
+    
+    .menu{
+        height: 900px;
+        
+    }
+    .menu .col-4{
+        margin-bottom: 120px;
+    }
+    .menu .btn-order{
+        width: 100px;
+        font-size: 12px;
+    }
+    .best-eat{
+        margin-top: 290px;
+    }
+    .best-eat h2{
+        font-size: 36px;
+    }
+    .best-eat p{
+        font-size: 18px;
+    }
+    .promosi{
+        margin-top: 40px;
+    }
+    .promosi h2{
+        margin-bottom: -30px;
+    }
+    .menu-pizza{
+        margin-bottom: 390px;
+    }
+    .services .card{
+        padding: 100px;
+    }
+    .services p{
+        color: #0F0F0F;
+        font-weight: 600;
+       margin-top: 20px;
+     
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        flex-wrap:nowrap;
+    }
+    .menu-minuman{
+        margin-bottom: 200px;
+    }
+    
+}
