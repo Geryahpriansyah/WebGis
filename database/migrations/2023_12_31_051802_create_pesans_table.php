@@ -13,13 +13,14 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('checkouts', function (Blueprint $table) {
+        Schema::create('pesans', function (Blueprint $table) {
             $table->id();
-            $table->foreignId('users_id')->constrained();
-            $table->foreignId('carts_id')->constrained();
-            $table->string('Metode Pembayaran');
-            $table->foreignId('promos_id')->constrained();
-            $table->string('servis');
+            $table->unsignedBigInteger('user_id');
+            $table->unsignedBigInteger('menu_id');
+            $table->integer('total price');
+            $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
+            $table->foreign('menu_id')->references('id')->on('menus')->onDelete('cascade');
+
             $table->timestamps();
             $table->softDeletes();
         });
@@ -32,6 +33,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('checkouts');
+        Schema::dropIfExists('pesans');
     }
 };

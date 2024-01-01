@@ -13,13 +13,13 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('drivers', function (Blueprint $table) {
+        Schema::create('menus', function (Blueprint $table) {
             $table->id();
-            $table->string('name');
-            $table->integer('no_telepon');
-            $table->string('status');
-            $table->foreignId('carts_id')->constrained();
+            $table->string('name',100);
+            $table->string('Deskripsi',100);
+            $table->integer('price');
             $table->timestamps();
+            $table->softDeletes();
         });
     }
 
@@ -30,6 +30,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('drivers');
+        Schema::dropIfExists('menus');
     }
 };

@@ -13,7 +13,13 @@ return new class extends Migration
      */
     public function up()
     {
-       Schema::dropIfExists('checkouts');
+        Schema::create('locations', function (Blueprint $table) {
+            $table->id();
+            $table->integer('latitude');
+            $table->integer('longitude');
+            $table->string('nama_lokasi');
+            $table->timestamps();
+        });
     }
 
     /**
@@ -23,6 +29,6 @@ return new class extends Migration
      */
     public function down()
     {
-        //
+        Schema::dropIfExists('locations');
     }
 };

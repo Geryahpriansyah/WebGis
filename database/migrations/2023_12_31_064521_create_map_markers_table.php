@@ -13,12 +13,13 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('burgers', function (Blueprint $table) {
+        Schema::create('map_markers', function (Blueprint $table) {
             $table->id();
-            $table->string('name',100);
-            $table->integer('price')->unsigned();
+            $table->unsignedBigInteger('location_id');
+            $table->string('nama marker');
+            $table->string('icon marker');
             $table->timestamps();
-            $table->softDeletes();
+            $table->foreign('location_id')->references('id')->on('locations')->onDelete('cascade');
         });
     }
 
@@ -29,6 +30,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('burgers');
+        Schema::dropIfExists('map_markers');
     }
 };
