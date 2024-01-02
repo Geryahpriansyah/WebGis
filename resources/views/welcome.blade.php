@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
     <!-- linkcss -->
-    <link rel="stylesheet" href="{{asset("css/style.css")}}">
+    <link rel="stylesheet" href="style.css">
 
     <!-- linkfontawesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
@@ -26,7 +26,7 @@
     <nav class="navbar navbar-expand-lg navbar-dark ">
         <div class="container">
           <a class="navbar-brand" href="#">
-            <img src="{{asset("img/logo-removebg-preview.png")}}" alt="" width="80" height="46">
+            <img src="img/logo-removebg-preview.png" alt="" width="80" height="46">
           </a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -35,12 +35,12 @@
             <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
               <li class="nav-item">
                 <a class="nav-link active" aria-current="page" href="index.html">
-                  <img src="icon/home-button_5974636.png" alt="" width="25" height="25" class="d-inline-block align-text-top">
+                  <img src="icon/dashboard-button_5974636.png" alt="" width="25" height="25" class="d-inline-block align-text-top">
                   home
                 </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="{{route('promo')}}">
+                <a class="nav-link" href="promo.html">
                   <img src="icon/megaphone_7495807.png" alt="" width="24" height="28" class="d-inline-block align-text-top">
                   promo
                 </a>
@@ -51,13 +51,13 @@
                   Menu
                 </a>
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li><a class="dropdown-item" href="{{route('burger')}}"> 
+                  <li><a class="dropdown-item" href="burger.html"> 
                     <img src="icon/burger_877951.png" alt="" width="25" height="29" class="d-inline-block align-text-top">
                     Burger</a></li>
-                  <li><a class="dropdown-item" href="{{route('pizza')}}"> <img src="icon/pizza_3595458.png" alt="" width="25" height="29" class="d-inline-block align-text-top">
+                  <li><a class="dropdown-item" href="pizza.html"> <img src="icon/pizza_3595458.png" alt="" width="25" height="29" class="d-inline-block align-text-top">
                     Pizza</a></li>
                   <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="{{route('minuman')}}">
+                  <li><a class="dropdown-item" href="minuman.html">
                     <img src="icon/frappe_1880440.png" alt="" width="25" height="29" class="d-inline-block align-text-top">
                    Minuman
                   </a></li>
